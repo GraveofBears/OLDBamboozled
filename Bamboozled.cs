@@ -6,29 +6,23 @@ using ServerSync;
 using HarmonyLib;
 
 
-namespace BambooWalls
+namespace Bamboozled
 {
 	[BepInPlugin(ModGUID, ModName, ModVersion)]
-	public class BambooWalls : BaseUnityPlugin
+	public class Bamboozled : BaseUnityPlugin
 	{
-		private const string ModName = "BambooWalls";
-		private const string ModVersion = "0.0.6";
-		private const string ModGUID = "org.bepinex.plugins.BambooWalls";
+		private const string ModName = "Bamboozled";
+		private const string ModVersion = "0.0.1";
+		private const string ModGUID = "org.bepinex.plugins.bamboozled";
 
 
 		public void Awake()
 
 		{
-
-			BuildPiece OP_Bamboo_Sapling = new("bamboo", "OP_Bamboo_Sapling");
+			BuildPiece OP_Bamboo_Sapling = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Sapling", true, "Cultivator");
 			OP_Bamboo_Sapling.Name.English("Odins Bamboo Sapling");
 			OP_Bamboo_Sapling.Description.English("A strange tree");
 			OP_Bamboo_Sapling.RequiredItems.Add("AncientSeed", 1, true);
-
-			Item OP_Bamboo_Hammer = new("bamboo", "OP_Bamboo_Hammer");  //assetbundle name, Asset Name
-			OP_Bamboo_Hammer.Crafting.Add(CraftingTable.Workbench, 1);
-			OP_Bamboo_Hammer.RequiredItems.Add("OP_Bamboo_Wood", 1);
-			OP_Bamboo_Hammer.CraftAmount = 1;
 
 			GameObject OP_Bamboo_Brush_Fence = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Brush_Fence"); 
 			
@@ -131,7 +125,12 @@ namespace BambooWalls
 
 			GameObject OP_Bamboo_Wood = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Wood"); //register projectile
 
+			GameObject OP_Bamboo_Build_Totem = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Build_Totem"); //register projectile
 
+			Item OP_Bamboo_Hammer = new("bamboo", "OP_Bamboo_Hammer");  //assetbundle name, Asset Name
+			OP_Bamboo_Hammer.Crafting.Add(CraftingTable.Workbench, 1);
+			OP_Bamboo_Hammer.RequiredItems.Add("OP_Bamboo_Wood", 1);
+			OP_Bamboo_Hammer.CraftAmount = 1;
 
 
 			new Harmony(ModName).PatchAll();			
