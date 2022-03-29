@@ -12,7 +12,7 @@ namespace Bamboozled
 	public class Bamboozled : BaseUnityPlugin
 	{
 		private const string ModName = "Bamboozled";
-		private const string ModVersion = "0.0.1";
+		private const string ModVersion = "0.0.2";
 		private const string ModGUID = "org.bepinex.plugins.bamboozled";
 
 
@@ -24,8 +24,17 @@ namespace Bamboozled
 			OP_Bamboo_Sapling.Description.English("A strange tree");
 			OP_Bamboo_Sapling.RequiredItems.Add("AncientSeed", 1, true);
 
+			Item OP_Bamboo_Wood = new("bamboo", "OP_Bamboo_Wood");  
+			OP_Bamboo_Wood.Crafting.Add(CraftingTable.Workbench, 10);
+			OP_Bamboo_Wood.RequiredItems.Add("SwordCheat", 1);
+			OP_Bamboo_Wood.CraftAmount = 1;
 
-			GameObject OP_Bamboo_Wood = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Wood"); 
+			Item OP_Bamboo_Hammer = new("bamboo", "OP_Bamboo_Hammer");  //assetbundle name, Asset Name
+			OP_Bamboo_Hammer.Crafting.Add(CraftingTable.Workbench, 1);
+			OP_Bamboo_Hammer.RequiredItems.Add("OP_Bamboo_Wood", 1);
+			OP_Bamboo_Hammer.CraftAmount = 1;
+
+
 
 			GameObject OP_Bamboo_Brush_Fence = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Brush_Fence"); 
 			
@@ -128,10 +137,6 @@ namespace Bamboozled
 
 			GameObject OP_Bamboo_Build_Totem = ItemManager.PrefabManager.RegisterPrefab("bamboo", "OP_Bamboo_Build_Totem");
 
-			Item OP_Bamboo_Hammer = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Hammer");
-			OP_Bamboo_Hammer.Crafting.Add(CraftingTable.Workbench, 1);
-			OP_Bamboo_Hammer.RequiredItems.Add("OP_Bamboo_Wood", 6);
-			OP_Bamboo_Hammer.CraftAmount = 1;
 
 			new Harmony(ModName).PatchAll();			
 
