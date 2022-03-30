@@ -201,50 +201,50 @@ namespace Bamboozled
 			BuildPiece OP_Ruin_Pillar_1 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Ruin_Pillar_1", true, "OP_Bamboo_Hammer");
 			OP_Ruin_Pillar_1.Name.English("OP_Ruin_Pillar_1");
 			OP_Ruin_Pillar_1.Description.English("A stone pillar");
-			OP_Ruin_Pillar_1.RequiredItems.Add("Stone", 1, true);
-			OP_Ruin_Pillar_1.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Ruin_Pillar_1.RequiredItems.Add("Stone", 6, true);
+			OP_Ruin_Pillar_1.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Ruin_Pillar_2 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Ruin_Pillar_2", true, "OP_Bamboo_Hammer");
 			OP_Ruin_Pillar_2.Name.English("OP_Ruin_Pillar_2");
 			OP_Ruin_Pillar_2.Description.English("A stone pillar");
-			OP_Ruin_Pillar_2.RequiredItems.Add("Stone", 1, true);
-			OP_Ruin_Pillar_2.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Ruin_Pillar_2.RequiredItems.Add("Stone", 6, true);
+			OP_Ruin_Pillar_2.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Ruin_Pillar_3 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Ruin_Pillar_3", true, "OP_Bamboo_Hammer");
 			OP_Ruin_Pillar_3.Name.English("OP_Ruin_Pillar_3");
 			OP_Ruin_Pillar_3.Description.English("A stone pillar");
-			OP_Ruin_Pillar_3.RequiredItems.Add("Stone", 1, true);
-			OP_Ruin_Pillar_3.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Ruin_Pillar_3.RequiredItems.Add("Stone", 6, true);
+			OP_Ruin_Pillar_3.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Rock_Formation_1 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Rock_Formation_1", true, "OP_Bamboo_Hammer");
 			OP_Rock_Formation_1.Name.English("OP_Rock_Formation_1");
 			OP_Rock_Formation_1.Description.English("A stone rock formation");
-			OP_Rock_Formation_1.RequiredItems.Add("Stone", 1, true);
-			OP_Rock_Formation_1.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Rock_Formation_1.RequiredItems.Add("Stone", 4, true);
+			OP_Rock_Formation_1.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Rock_Formation_2 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Rock_Formation_2", true, "OP_Bamboo_Hammer");
 			OP_Rock_Formation_2.Name.English("OP_Rock_Formation_2");
 			OP_Rock_Formation_2.Description.English("A stone rock formation");
-			OP_Rock_Formation_2.RequiredItems.Add("Stone", 1, true);
-			OP_Rock_Formation_2.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Rock_Formation_2.RequiredItems.Add("Stone", 4, true);
+			OP_Rock_Formation_2.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Rock_Formation_3 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Rock_Formation_3", true, "OP_Bamboo_Hammer");
 			OP_Rock_Formation_3.Name.English("OP_Rock_Formation_3");
 			OP_Rock_Formation_3.Description.English("A stone rock formation");
-			OP_Rock_Formation_3.RequiredItems.Add("Stone", 1, true);
-			OP_Rock_Formation_3.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Rock_Formation_3.RequiredItems.Add("Stone", 4, true);
+			OP_Rock_Formation_3.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Rock_Formation_4 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Rock_Formation_4", true, "OP_Bamboo_Hammer");
 			OP_Rock_Formation_4.Name.English("OP_Rock_Formation_4");
 			OP_Rock_Formation_4.Description.English("A stone rock formation");
-			OP_Rock_Formation_4.RequiredItems.Add("Stone", 1, true);
-			OP_Rock_Formation_4.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
+			OP_Rock_Formation_4.RequiredItems.Add("Stone", 4, true);
+			OP_Rock_Formation_4.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 
 			BuildPiece OP_Stone_Path_1 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Stone_Path_1", true, "OP_Bamboo_Hammer");
