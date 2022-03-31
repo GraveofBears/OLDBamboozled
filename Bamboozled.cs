@@ -12,13 +12,15 @@ namespace Bamboozled
 	public class Bamboozled : BaseUnityPlugin
 	{
 		private const string ModName = "Bamboozled";
-		private const string ModVersion = "0.0.5";
+		private const string ModVersion = "0.0.7";
 		private const string ModGUID = "org.bepinex.plugins.bamboozled";
 
 
 		public void Awake()
 
+
 		{
+
 			BuildPiece OP_Bamboo_Sapling = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Sapling", true, "Cultivator");
 			OP_Bamboo_Sapling.Name.English("Odins Bamboo Sapling");
 			OP_Bamboo_Sapling.Description.English("A strange tree");
@@ -97,11 +99,11 @@ namespace Bamboozled
 			OP_Bamboo_Thick_Beam_Light.Name.English("OP_Bamboo_Thick_Beam_Light");
 			OP_Bamboo_Thick_Beam_Light.Description.English("A bamboozled piece");
 			OP_Bamboo_Thick_Beam_Light.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
-
-			BuildPiece OP_Bamboo_Angle_Beam_25 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Angle_Beam_25", true, "OP_Bamboo_Hammer");
-			OP_Bamboo_Angle_Beam_25.Name.English("OP_Bamboo_Angle_Beam_25");
-			OP_Bamboo_Angle_Beam_25.Description.English("A bamboozled piece");
-			OP_Bamboo_Angle_Beam_25.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
+			
+			BuildPiece OP_Bamboo_Angle_Beam_26 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Angle_Beam_26", true, "OP_Bamboo_Hammer");
+			OP_Bamboo_Angle_Beam_26.Name.English("OP_Bamboo_Angle_Beam_26");
+			OP_Bamboo_Angle_Beam_26.Description.English("A bamboozled piece");
+			OP_Bamboo_Angle_Beam_26.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 			BuildPiece OP_Bamboo_Angle_Beam_45 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Angle_Beam_45", true, "OP_Bamboo_Hammer");
 			OP_Bamboo_Angle_Beam_45.Name.English("OP_Bamboo_Angle_Beam_45");
@@ -132,7 +134,7 @@ namespace Bamboozled
 			OP_Bamboo_Brush_Fence.Name.English("OP_Bamboo_Brush_Fence");
 			OP_Bamboo_Brush_Fence.Description.English("A bamboozled piece");
 			OP_Bamboo_Brush_Fence.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
-
+			
 			BuildPiece OP_Bamboo_Brush_Fence_2 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Brush_Fence_2", true, "OP_Bamboo_Hammer");
 			OP_Bamboo_Brush_Fence_2.Name.English("OP_Bamboo_Brush_Fence_2");
 			OP_Bamboo_Brush_Fence_2.Description.English("A bamboozled piece");
@@ -197,26 +199,26 @@ namespace Bamboozled
 			OP_Bamboo_Straw_Gate.Name.English("OP_Bamboo_Straw_Gate");
 			OP_Bamboo_Straw_Gate.Description.English("A bamboozled piece");
 			OP_Bamboo_Straw_Gate.RequiredItems.Add("OP_Bamboo_Wood", 4, true);
-
+			
 			BuildPiece OP_Bamboo_Straw_Gate_2 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Straw_Gate_2", true, "OP_Bamboo_Hammer");
 			OP_Bamboo_Straw_Gate_2.Name.English("OP_Bamboo_Straw_Gate_2");
 			OP_Bamboo_Straw_Gate_2.Description.English("A bamboozled piece");
 			OP_Bamboo_Straw_Gate_2.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
-
-			BuildPiece OP_Bamboo_Wall_Top_25 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_Top_25", true, "OP_Bamboo_Hammer");
-			OP_Bamboo_Wall_Top_25.Name.English("OP_Bamboo_Wall_Top_25");
-			OP_Bamboo_Wall_Top_25.Description.English("A bamboozled piece");
-			OP_Bamboo_Wall_Top_25.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
-
+			
+			BuildPiece OP_Bamboo_Wall_Top_26 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_Top_26", true, "OP_Bamboo_Hammer");
+			OP_Bamboo_Wall_Top_26.Name.English("OP_Bamboo_Wall_Top_26");
+			OP_Bamboo_Wall_Top_26.Description.English("A bamboozled piece");
+			OP_Bamboo_Wall_Top_26.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
+			
 			BuildPiece OP_Bamboo_Wall_Top_45 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_Top_45", true, "OP_Bamboo_Hammer");
 			OP_Bamboo_Wall_Top_45.Name.English("OP_Bamboo_Wall_Top_45");
 			OP_Bamboo_Wall_Top_45.Description.English("A bamboozled piece");
 			OP_Bamboo_Wall_Top_45.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
-			BuildPiece OP_Bamboo_Wall_25 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_25", true, "OP_Bamboo_Hammer");
-			OP_Bamboo_Wall_25.Name.English("OP_Bamboo_Wall_25");
-			OP_Bamboo_Wall_25.Description.English("A bamboozled piece");
-			OP_Bamboo_Wall_25.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
+			BuildPiece OP_Bamboo_Wall_26 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_26", true, "OP_Bamboo_Hammer");
+			OP_Bamboo_Wall_26.Name.English("OP_Bamboo_Wall_26");
+			OP_Bamboo_Wall_26.Description.English("A bamboozled piece");
+			OP_Bamboo_Wall_26.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
 
 			BuildPiece OP_Bamboo_Wall_45 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Bamboo_Wall_45", true, "OP_Bamboo_Hammer");
 			OP_Bamboo_Wall_45.Name.English("OP_Bamboo_Wall_45");
@@ -227,14 +229,14 @@ namespace Bamboozled
 			OP_Bamboo_Ladder.Name.English("OP_Bamboo_Ladder");
 			OP_Bamboo_Ladder.Description.English("A ladder");
 			OP_Bamboo_Ladder.RequiredItems.Add("OP_Bamboo_Wood", 4, true);
-
+			
 			//leaves
 
 			BuildPiece OP_Leaves_1 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Leaves_1", true, "OP_Bamboo_Hammer");
 			OP_Leaves_1.Name.English("OP_Leaves_2");
 			OP_Leaves_1.Description.English("A bamboozled piece");
 			OP_Leaves_1.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
-
+			
 			BuildPiece OP_Leaves_2 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Leaves_2", true, "OP_Bamboo_Hammer");
 			OP_Leaves_2.Name.English("OP_Leaves_2");
 			OP_Leaves_2.Description.English("A bamboozled piece");
@@ -259,7 +261,7 @@ namespace Bamboozled
 			OP_Leaves_6.Name.English("OP_Leaves_6");
 			OP_Leaves_6.Description.English("A bamboozled piece");
 			OP_Leaves_6.RequiredItems.Add("OP_Bamboo_Wood", 2, true);
-
+			
 			//stone 
 
 			BuildPiece OP_Ruin_Pillar_1 = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Ruin_Pillar_1", true, "OP_Bamboo_Hammer");
@@ -339,54 +341,48 @@ namespace Bamboozled
 			OP_Stone_Path_4.RequiredItems.Add("OP_Bamboo_Wood", 1, true);
 
 			//bamboo forest walls
-
+			
 			BuildPiece OP_Wild_Bamboo_Wall = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Wall", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Wall.Name.English("OP_Wild_Bamboo_Wall");
 			OP_Wild_Bamboo_Wall.Description.English("A bamboozled piece");
 			OP_Wild_Bamboo_Wall.RequiredItems.Add("OP_Bamboo_Wood", 12, true);
-
+			
 
 			BuildPiece OP_Wild_Bamboo = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo.Name.English("OP_Wild_Bamboo");
 			OP_Wild_Bamboo.Description.English("A bamboozled piece");
 			OP_Wild_Bamboo.RequiredItems.Add("OP_Bamboo_Wood", 4, true);
 
-
+			
 			BuildPiece OP_Wild_Bamboo_Light = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Light", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Light.Name.English("OP_Wild_Bamboo_Light");
 			OP_Wild_Bamboo_Light.Description.English("A bamboozled piece");
 			OP_Wild_Bamboo_Light.RequiredItems.Add("OP_Bamboo_Wood", 4, true);
 
-
+			
 			BuildPiece OP_Wild_Bamboo_Dark = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Dark", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Dark.Name.English("OP_Wild_Bamboo_Dark");
 			OP_Wild_Bamboo_Dark.Description.English("A bamboozled piece");
 			OP_Wild_Bamboo_Dark.RequiredItems.Add("OP_Bamboo_Wood", 4, true);
 
-
+			
 			BuildPiece OP_Wild_Bamboo_Cluster = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Cluster", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Cluster.Name.English("OP_Wild_Bamboo_Cluster");
 			OP_Wild_Bamboo_Cluster.Description.English("A bamboozled piece");
 			OP_Wild_Bamboo_Cluster.RequiredItems.Add("OP_Bamboo_Wood", 8, true);
 
 
-			BuildPiece OP_Wild_Bamboo_Cluster_Light = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Cluster_Light", true, "OP_Bamboo_Hammer");
-			OP_Wild_Bamboo_Cluster_Light.Name.English("OP_Wild_Bamboo_Cluster_Light");
-			OP_Wild_Bamboo_Cluster_Light.Description.English("A bamboozled piece");
-			OP_Wild_Bamboo_Cluster_Light.RequiredItems.Add("OP_Bamboo_Wood", 8, true);
-
-
 			BuildPiece OP_Wild_Bamboo_Cluster_Dark = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Cluster_Dark", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Cluster_Dark.Name.English("OP_Wild_Bamboo_Cluster_Dark");
 			OP_Wild_Bamboo_Cluster_Dark.Description.English("A bamboozled piece");
-			OP_Wild_Bamboo_Cluster_Light.RequiredItems.Add("OP_Bamboo_Wood", 8, true);
-
+			OP_Wild_Bamboo_Cluster_Dark.RequiredItems.Add("OP_Bamboo_Wood", 8, true);
+			
 
 			BuildPiece OP_Wild_Bamboo_Wall_Door = new(PiecePrefabManager.RegisterAssetBundle("bamboo"), "OP_Wild_Bamboo_Wall_Door", true, "OP_Bamboo_Hammer");
 			OP_Wild_Bamboo_Wall_Door.Name.English("OP_Wild_Bamboo_Wall_Door");
 			OP_Wild_Bamboo_Wall_Door.Description.English("A bamboozled piece");
-			OP_Wild_Bamboo_Cluster_Light.RequiredItems.Add("OP_Bamboo_Wood", 10, true);
-
+			OP_Wild_Bamboo_Wall_Door.RequiredItems.Add("OP_Bamboo_Wood", 10, true);
+			
 
 
 			//trees

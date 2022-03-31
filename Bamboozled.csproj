@@ -78,8 +78,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\ItemManager.dll</HintPath>
     </Reference>
-    <Reference Include="PieceManager, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>PieceManager.dll</HintPath>
+    <Reference Include="PieceManager, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PieceManager-master - OdinsFoodBarrels\PieceManager-master\Libs\PieceManager.dll</HintPath>
     </Reference>
     <Reference Include="ServerSync, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
