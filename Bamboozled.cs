@@ -401,6 +401,7 @@ namespace Bamboozled
 
 			new Harmony(ModName).PatchAll();
 
+			MaterialReplacer.RegisterGameObjectForShaderSwap(OP_Bamboo_Tree_1, MaterialReplacer.ShaderType.VegetationShader );
 
 
 		}
