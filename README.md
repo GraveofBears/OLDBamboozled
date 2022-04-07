@@ -45,7 +45,9 @@ OP_Bamboo_Hammer
 
 <p align="center">
 
-<img src="https://media2.giphy.com/media/5A7lJnL4mXuN8LxrKW/giphy.gif">
+  <img src="https://media2.giphy.com/media/5A7lJnL4mXuN8LxrKW/giphy.gif" alt="Bamboozled">
+
+</p>
 
 
 <p align="center">
